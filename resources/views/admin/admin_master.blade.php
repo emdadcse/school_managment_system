@@ -28,7 +28,12 @@
   <!-- Left side column. contains the logo and sidebar -->
 @include('admin.body.sidebar')
   <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" style="min-height: 983.75px;">
+    <div class="container-full">
+
 @yield('main_content')
+    </div>
+  </div>
   <!-- /.content-wrapper -->
  @include('admin.body.footer')
 
@@ -305,6 +310,9 @@
 	<script src="{{asset('../assets/vendor_components/easypiechart/dist/jquery.easypiechart.js')}}"></script>
 	<script src="{{asset('../assets/vendor_components/apexcharts-bundle/irregular-data-series.js')}}"></script>
 	<script src="{{asset('../assets/vendor_components/apexcharts-bundle/dist/apexcharts.js')}}"></script>
+
+    <script src="{{asset('../assets/vendor_components/datatable/datatables.min.js')}}"></script>
+    <script src="{{asset('backend/js/pages/data-table.js')}}"></script>
 
 	<!-- Sunny Admin App -->
 	<script src="{{asset('backend/js/template.js')}}"></script>
